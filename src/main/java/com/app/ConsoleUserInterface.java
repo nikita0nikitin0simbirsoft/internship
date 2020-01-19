@@ -1,10 +1,12 @@
 package com.app;
 
+import com.app.database.DataBase;
 import com.app.writer.ConsoleWriter;
-import com.app.controllers.DbController;
 import com.app.controllers.HtmlController;
 import com.app.logic.Parser;
 import org.apache.log4j.Logger;
+
+import javax.xml.crypto.Data;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Scanner;
@@ -19,7 +21,7 @@ public class ConsoleUserInterface { //program entry and user interface
         ConsoleWriter writer = new ConsoleWriter();
         HtmlController htmlController = new HtmlController();
         Parser parser = new Parser();
-        DbController dbController = new DbController();
+        DataBase db = new DataBase();
 
         while (true){
             try {
@@ -54,7 +56,7 @@ public class ConsoleUserInterface { //program entry and user interface
                     }
                     break;
                 case 4:
-                    dbController.saveListWordInDb(parser.getListWord());
+                    db.saveListWordInDb(parser.getListWord());
                     break;
                 case 5:
                     return;

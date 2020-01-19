@@ -1,5 +1,6 @@
 package com.app.database;
 
+import com.app.model.ListWord;
 import com.app.model.Word;
 import org.apache.log4j.Logger;
 
@@ -57,5 +58,31 @@ public class DataBase { //database with methods for connecting, creating and sen
             executeQuery.close();
         }
         return listRecord;
+    }
+
+    public DataBase() {
+        try {
+            connect();
+        } catch (Exception e) {
+            System.out.println("Error connection");
+            log.error(e);
+        }
+    }
+
+    public void saveListWordInDb (ListWord listWord){
+        if (listWord == null || listWord.isEmpty()){
+            System.out.println("List empty");
+        }else {
+            try {
+                for (Word word : listWord){
+                    inset(word);
+                }
+                System.out.println("Append");
+            }catch (Exception e){
+                log.error(e);
+                System.out.println("Error selected db");
+            }
+
+        }
     }
 }
