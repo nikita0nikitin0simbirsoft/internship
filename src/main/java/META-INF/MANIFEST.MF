@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: C:\Users\Никита\IdeaProjects\проект IDEA\src\m
+ ain\java\com\app\ConsoleUserInterface
+Main-Class: com.app.ConsoleUserInterface
+
