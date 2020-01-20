@@ -13,9 +13,10 @@ public class Parser { //a class that includes the logic of the program, a
             listWord=new ListWord();
         }else{
             listWord = new ListWord();
+            String content="";
             Document html = Jsoup.parse(htmlDoc);
-            String content = html.body().getElementsByTag("div").text();
-            content = content.replaceAll("[0-9@\\]\\[%#«-»–-—/,'.!?\"<>;:()\n\r\t]"," ");
+            content = html.body().getElementsByTag("body").text();
+            content = content.replaceAll("[0-9@\\]\\[%#«-»–-—/,+=*'�{}|$~^&.!?\"<>;:()\n\r\t]"," ");
             content = content.toLowerCase();
             String[] arr =  content.split(" ");
 
