@@ -1,1 +1,479 @@
-<!DOCTYPE html><html class="i-ua_js_no i-ua_css_standard" lang="ru"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Технологии Яндекса</title><meta name="description" content="Инструменты Яндекса для ваших сайтов и приложений: облачное хранение и синхронизация, API Карт, Маркета, Директа и Денег, речевые и лингвистические технологии и многое другое."/><meta name="keywords" content=""/><link rel="alternate" href="https://yandex.ru/dev/" hreflang="ru"/><link rel="alternate" href="https://tech.yandex.com/" hreflang="en"/><link rel="alternate" href="https://tech.yandex.com.tr/" hreflang="tr"/><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/><meta property="og:title" content="Технологии Яндекса"/><meta property="og:description" content="Инструменты Яндекса для ваших сайтов и приложений: облачное хранение и синхронизация, API Карт, Маркета, Директа и Денег, речевые и лингвистические технологии и многое другое."/><meta property="og:image" content=""/><meta property="og:type" content="website"/><meta property="og:url" content="http://yandex.ru/dev/"/><meta property="twitter:card" content="summary"/><meta property="twitter:title" content="Технологии Яндекса"/><meta property="twitter:description" content="Инструменты Яндекса для ваших сайтов и приложений: облачное хранение и синхронизация, API Карт, Маркета, Директа и Денег, речевые и лингвистические технологии и многое другое."/><meta property="twitter:image" content=""/><meta name="yandex-verification" content="7625ad611f371091"/><script nonce="258ZnN1rNBZBAa7m2BkNRA==">;(function(d,e,c,r){e=d.documentElement;c="className";r="replace";e[c]=e[c][r]("i-ua_js_no","i-ua_js_yes");if(d.compatMode!="CSS1Compat")e[c]=e[c][r]("i-ua_css_standart","i-ua_css_quirks")})(document);;(function(d,e,c,n,w,v,f){e=d.documentElement;c="className";n="createElementNS";f="firstChild";w="http://www.w3.org/2000/svg";e[c]+=" i-ua_svg_"+(!!d[n]&&!!d[n](w,"svg").createSVGRect?"yes":"no");v=d.createElement("div");v.innerHTML="<svg/>";e[c]+=" i-ua_inlinesvg_"+((v[f]&&v[f].namespaceURI)==w?"yes":"no");})(document);;(function(d,e,p){e=d.documentElement;p="placeholder";e.className+=" i-ua_"+p+(p in d.createElement("input")?"_yes":"_no")})(document);;(function(w,e,s,c,x,l,p,d){c="className";x="deviceXDPI";l="logicalXDPI";p="devicePixelRatio";d=x in s&&l in s&&s[x]/s[l]||p in w&&w[p];d>1&&(e[c]+=" i-ua_retina_yes")})(window,document.documentElement,screen);</script><link rel="shortcut icon" href="/dev/favicon.ico"/><!--[if IE 8]><link rel="stylesheet" href="//yastatic.net/q/tech-front/vv2.22.5/static/desktop.bundles/index/_index.ie8.css"/><![endif]--><!--[if IE 9]><link rel="stylesheet" href="//yastatic.net/q/tech-front/vv2.22.5/static/desktop.bundles/index/_index.ie9.css"/><![endif]--><!--[if gt IE 9]><!--><link rel="stylesheet" href="//yastatic.net/q/tech-front/vv2.22.5/static/desktop.bundles/index/_index.css"/><!--<![endif]--></head><body class="b-page b-page_type_index b-page__body i-ua i-global i-bem" data-bem='{"b-page":{},"i-ua":{},"i-global":{"lang":"ru","tld":"ru","content-region":"ru","click-host":"//clck.yandex.ru","passport-host":"https://passport.yandex.ru","pass-host":"blackbox.yandex.net","social-host":"https://social.yandex.ru","export-host":"https://export.yandex.ru","login":"","lego-static-host":"https://yastatic.net/lego/2.10-142","retpath":"http://yandex.ru/dev/","yandexuid":"","uid":"","id":""}}'><div class="head i-bem" data-bem='{"head":{"hideSearch":false}}'><div class="head__paranja"></div><div class="head__main"><div class="head__logo"><a class="logo logo_type_link logo_name_ru head__logo-link" href="https://yandex.ru" title="Яндекс">Яндекс</a></div><div class="head__left"><div class="head__level-limiter"><ul class="head__level"><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//yandex.ru/company/" data-bem='{"link":{}}'>Компания</a></li><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//yandex.ru/blog/company" data-bem='{"link":{}}'>Блог</a></li><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//yandex.ru/jobs/" data-bem='{"link":{}}'>Вакансии</a></li><li class="head__level-item"><a class="link head__link head__link_current i-bem" tabindex="0" href="/dev" data-bem='{"link":{}}'>Разработчикам</a></li><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//yandex.ru/adv/" data-bem='{"link":{}}'>Рекламодателям</a></li></ul></div></div><div class="head__right"><div class="head__user"><div class="user2 i-bem" data-bem='{"user2":{"live":false,"mailCallerId":"dev","_uid":false,"_retpath":"http://yandex.ru/dev/","_yu":"","accountsUrl":"https://pass.yandex.ru/accounts","_passportHost":"https://passport.yandex.ru"}}'><a class="button2 button2_size_m button2_theme_pseudo button2_type_link button2_view_classic user2__enter i-bem" title="Войти" tabindex="-1" href="https://passport.yandex.ru/auth?retpath=http%3A%2F%2Fyandex.ru%2Fdev%2F" data-bem='{"button2":{}}'><span class="icon icon_size_m button2__icon button2__icon_side_left user2__enter-icon"></span><span class="button2__text">Войти</span></a></div></div><div class="head__search"><button class="button2 button2_theme_clear button2_size_xs button2_view_classic head__search-button i-bem" type="button" autocomplete="off" tabindex="0" data-bem='{"button2":{}}'><span class="icon icon_type_search-white head__search-icon button2__icon"></span></button><form class="search2 head__search-form" role="search" action="https://yandex.ru/search/" target="_blank"><div class="search2__input"><span class="input input_size_m input_theme_normal i-bem" data-bem='{"input":{"live":false}}'><span class="input__box"><span class="input__clear" unselectable="on"> </span><input class="input__control head__search-input" id="uniq15756351929141776593" name="text" aria-labelledby="labeluniq15756351929141776593 hintuniq15756351929141776593" autocapitalize="none"/></span></span></div><div class="search2__button"></div><input class="search2__hidden" type="hidden" name="site" value="yandex.ru/dev"/></form></div><div class="head__burger"><button class="button2 button2_theme_clear button2_size_xs button2_view_classic head__dropdown-toggle i-bem" type="button" autocomplete="off" tabindex="0" data-bem='{"button2":{}}'><span class="icon icon_type_burger button2__icon"></span></button></div></div></div><div class="head__dropdown"><div class="head__level-limiter"><ul class="head__level"><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//events.yandex.ru" data-bem='{"link":{}}'>События</a></li><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//research.yandex.ru" data-bem='{"link":{}}'>Наука</a></li><li class="head__level-item"><a class="link head__link i-bem" tabindex="0" href="//academy.yandex.ru" data-bem='{"link":{}}'>Обучение</a></li></ul></div></div></div><main class="b-page__main i-font i-font_face_yandex-sans-text"><div class="banners-section i-bem" data-bem='{"banners-section":{}}'><div class="banners-section__inner"><div class="banners-section__banners"><div class="banners-list i-bem" data-bem='{"banners-list":{}}'><div class="carousel banners-list__carousel i-bem" data-bem='{"carousel":{"config":{"margin":20,"stagePadding":40,"autoWidth":true}}}'><div class="carousel__slides owl-carousel" data-bem='{"carousel__slides":{}}'><div class="carousel__item" data-bem='{"carousel__item":{}}'><a class="carousel__item banners-list__item" style="background-image: url(https://avatars.mds.yandex.net/get-technologies/17047/53f550d7-ed4e-4af4-81a4-e947b6c3d084/orig);color: #ffffff;" href="/dev/appmetrica/" title="AppMetrica"><span class="carousel__name banners-list__name">AppMetrica</span><span class="carousel__text banners-list__text">Бесплатный трекинг и аналитика для вашего мобильного приложения</span></a></div><div class="carousel__item" data-bem='{"carousel__item":{}}'><a class="carousel__item banners-list__item" style="background-image: url(https://avatars.mds.yandex.net/get-technologies/15951/cf00c297-7364-405f-bfd7-27283bcce937/orig);color: #ffffff;" href="/dev/yandexcloud/" title="Яндекс.Облако"><span class="carousel__name banners-list__name">Яндекс.Облако</span><span class="carousel__text banners-list__text">Облачная платформа, где вы можете создавать и развивать свои проекты</span></a></div><div class="carousel__item" data-bem='{"carousel__item":{}}'><a class="carousel__item banners-list__item" style="background-image: url(https://avatars.mds.yandex.net/get-technologies/15951/42f969f7-8a42-44c5-94e0-f073405a314e/orig);color: #ffffff;" href="/dev/clickhouse/" title="ClickHouse"><span class="carousel__name banners-list__name">ClickHouse</span><span class="carousel__text banners-list__text">Распределённая аналитическая СУБД с открытым исходным кодом</span></a></div></div><div class="carousel__nav"><div class="carousel__arrow carousel__arrow_type_prev carousel__arrow_disabled icon_type_arrow-left" data-method="prev"></div><div class="carousel__dots"><span class="carousel__dot carousel__dot_active" data-order="0" data-bem='{"carousel__dot":{"order":0}}'></span><span class="carousel__dot" data-order="1" data-bem='{"carousel__dot":{"order":1}}'></span><span class="carousel__dot" data-order="2" data-bem='{"carousel__dot":{"order":2}}'></span></div><div class="carousel__arrow carousel__arrow_type_next icon_type_arrow-right" data-method="next"></div></div></div></div></div><div class="banners-section__catalogue banners-section__catalogue_hidden_yes"><div class="banners-section__catalogue-desktop-title">Все технологии</div><ul class="catalogue"><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Поиск</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/sitesearch/site" title="Поиск для сайта">Поиск для сайта</a></li><li><a class="catalogue__link" href="/dev/turbo" title="Турбо-страницы">Турбо-страницы</a></li><li><a class="catalogue__link" href="/dev/xml" title="Яндекс.XML">Яндекс.XML</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Карты и маршруты</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/locator" title="Локатор">Локатор</a></li><li><a class="catalogue__link" href="/dev/routing" title="Яндекс.Маршрутизация">Яндекс.Маршрутизация</a></li><li><a class="catalogue__link" href="/dev/maps" title="API Карт">API Карт</a></li><li><a class="catalogue__link" href="/dev/rasp" title="API Расписаний">API Расписаний</a></li><li><a class="catalogue__link" href="/dev/taxi" title="API Яндекс.Такси">API Яндекс.Такси</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Тестирование</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/tank" title="Танк">Танк</a></li><li><a class="catalogue__link" href="/dev/gemini" title="Gemini">Gemini</a></li><li><a class="catalogue__link" href="/dev/hermione" title="Hermione">Hermione</a></li><li><a class="catalogue__link" href="/dev/html-elements" title="HTML Elements">HTML Elements</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Хранение данных</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/disk" title="API Диска">API Диска</a></li><li><a class="catalogue__link" href="/dev/clickhouse" title="ClickHouse ">ClickHouse </a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Разработка сайтов</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/jsapi" title="Библиотека аудиоплеера для браузера">Библиотека аудиоплеера для браузера</a></li><li><a class="catalogue__link" href="/dev/bem" title="БЭМ">БЭМ</a></li><li><a class="catalogue__link" href="/dev/browser/constructor" title="Конструктор обновления браузеров">Конструктор обновления браузеров</a></li><li><a class="catalogue__link" href="/dev/browser" title="API Браузера">API Браузера</a></li><li><a class="catalogue__link" href="/dev/validator" title="API Валидатора микроразметки">API Валидатора микроразметки</a></li><li><a class="catalogue__link" href="/dev/pdd" title="API Почты для домена">API Почты для домена</a></li><li><a class="catalogue__link" href="/dev/jslibs" title="JavaScript-библиотеки">JavaScript-библиотеки</a></li><li><a class="catalogue__link" href="/dev/safebrowsing" title="Safe Browsing API">Safe Browsing API</a></li><li><a class="catalogue__link" href="/dev/games" title="Консоль Яндекс.Игр">Консоль Яндекс.Игр</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Доступ к Яндексу</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/share" title="Блок «Поделиться»">Блок «Поделиться»</a></li><li><a class="catalogue__link" href="/dev/reminder" title="Кнопка «Напомнить»">Кнопка «Напомнить»</a></li><li><a class="catalogue__link" href="/dev/passport" title="API Паспорта">API Паспорта</a></li><li><a class="catalogue__link" href="/dev/oauth" title="OAuth-авторизация">OAuth-авторизация</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000000"></div>Бизнес</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/delivery_all" title="Возможности Доставки">Возможности Доставки</a></li><li><a class="catalogue__link" href="/dev/money" title="Платежные решения Денег">Платежные решения Денег</a></li><li><a class="catalogue__link" href="/dev/dialogs/alice" title="Диалоги Алисы">Диалоги Алисы</a></li><li><a class="catalogue__link" href="/dev/webmaster" title="API Вебмастера">API Вебмастера</a></li><li><a class="catalogue__link" href="/dev/direct" title="API Директа">API Директа</a></li><li><a class="catalogue__link" href="/dev/display" title="API Дисплея">API Дисплея</a></li><li><a class="catalogue__link" href="/dev/connect" title="API Коннекта">API Коннекта</a></li><li><a class="catalogue__link" href="/dev/market" title="Технологии Яндекс.Маркета">Технологии Яндекс.Маркета</a></li><li><a class="catalogue__link" href="/dev/metrika" title="API Метрики">API Метрики</a></li><li><a class="catalogue__link" href="/dev/weather" title="API Яндекс.Погоды">API Яндекс.Погоды</a></li><li><a class="catalogue__link" href="/dev/yandexcloud" title="Яндекс.Облако">Яндекс.Облако</a></li><li><a class="catalogue__link" href="/dev/postoffice" title="API Почтового офиса">API Почтового офиса</a></li><li><a class="catalogue__link" href="/dev/toloka" title="API Яндекс.Толоки">API Яндекс.Толоки</a></li><li><a class="catalogue__link" href="/dev/connect/tracker" title="Tracker API">Tracker API</a></li><li><a class="catalogue__link" href="/dev/tanker" title="API Заправок">API Заправок</a></li><li><a class="catalogue__link" href="/dev/afisha" title="Партнерские программы Яндекс.Афиши">Партнерские программы Яндекс.Афиши</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000000"></div>Лингвистика</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/speller" title="Спеллер">Спеллер</a></li><li><a class="catalogue__link" href="/dev/tomita" title="Томита-парсер">Томита-парсер</a></li><li><a class="catalogue__link" href="/dev/translate" title="API Переводчика">API Переводчика</a></li><li><a class="catalogue__link" href="/dev/predictor" title="API Предиктора">API Предиктора</a></li><li><a class="catalogue__link" href="/dev/dictionary" title="API Словаря">API Словаря</a></li><li><a class="catalogue__link" href="/dev/mystem" title="MyStem">MyStem</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000000"></div>Мобильная разработка</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/yandex-apps-launch" title="Интенты и URL-схемы">Интенты и URL-схемы</a></li><li><a class="catalogue__link" href="/dev/appmetrica" title="AppMetrica">AppMetrica</a></li><li><a class="catalogue__link" href="/dev/maps/mapkit" title="MapKit">MapKit</a></li><li><a class="catalogue__link" href="/dev/mobile-ads" title="Mobile Ads SDK">Mobile Ads SDK</a></li><li><a class="catalogue__link" href="/dev/mobileauthsdk" title="SDK Паспорта для мобильных приложений">SDK Паспорта для мобильных приложений</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000000"></div>Реклама и платежи</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/audience" title="API Аудиторий">API Аудиторий</a></li></ul></li><li class="catalogue__item"><h4 class="catalogue__item-title"><div class="catalogue__colored-line" style="background: #000"></div>Инструменты ML</h4><ul class="catalogue__links"><li><a class="catalogue__link" href="/dev/catboost" title="CatBoost">CatBoost</a></li></ul></li></ul><div class="banners-section__catalogue-toggler"><div class="banners-section__catalogue-toggler-inner"><div class="banners-section__catalogue-toggler-text">Все технологии</div><div class="banners-section__catalogue-toggler-arrow icon icon_type_arrow-down-home"></div></div></div></div></div></div><section class="section"><div class="section__content-wrapper"><ul class="hubs"><li class="hubs__item hubs__item_type_webmasters"><div class="hubs__item-title">Вебмастерам</div><div class="hubs__item-content"><div class="hubs__item-description">Узнайте о&nbsp;том, как поиск Яндекса «видит» ваш сайт. Настройте индексирование своего сайта, сообщайте поисковой системе о&nbsp;новых и&nbsp;удаленных страницах, улучшайте отображение своего сайта в&nbsp;результатах поиска. </div><a class="button2 button2_size_m button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="/dev/hubs/webmasters" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></li><li class="hubs__item hubs__item_type_maps"><div class="hubs__item-title">Возможности API Карт</div><div class="hubs__item-content"><div class="hubs__item-description">Картографические данные и технологии Яндекса для сайта или приложения</div><a class="button2 button2_size_m button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="/dev/maps/mapsapi/" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></li></ul></div></section><section class="section"><div class="section__content-wrapper"><h3 class="section__title">Вакансии</h3><div class="vacancies-section"><a class="vacancies-section__counter" href="https://yandex.ru/jobs"><div class="vacancies-section__counter-title">535</div><div class="vacancies-section__counter-text">Открытых вакансий</div></a><a class="vacancies-section__info" href="https://yandex.ru/jobs/how-to"><div class="vacancies-section__info-title-wrap"><div class="vacancies-section__info-title">Соискателям</div><span class="icon icon_type_briefcase vacancies-section__icon"></span></div><div class="vacancies-section__info-text">Прием на работу и собеседование в Яндексе - чего ожидать</div></a><a class="vacancies-section__info" href="https://yandex.ru/jobs/about"><div class="vacancies-section__info-title-wrap"><div class="vacancies-section__info-title">Жизнь в Яндексе</div><span class="icon icon_type_hand vacancies-section__icon"></span></div><div class="vacancies-section__info-text">Как строится общение в компании, что мы ценим и какую обстановку поддерживаем</div></a></div></div></section><section class="section"><div class="section__content-wrapper"><h3 class="section__title">Новости и события</h3><div class="news-section"><div class="news-section__buttons"><a class="button2 button2_theme_normal button2_size_s button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies" data-bem='{"button2":{}}'><span class="icon icon_size_s icon_type_arrow icon_direction_right button2__icon button2__icon_side_right"></span><span class="button2__text">Все новости</span></a><a class="button2 button2_theme_normal button2_size_s button2_type_link button2_view_classic i-bem" tabindex="0" href="https://events.yandex.ru" data-bem='{"button2":{}}'><span class="icon icon_size_s icon_type_arrow icon_direction_right button2__icon button2__icon_side_right"></span><span class="button2__text">Все события</span></a></div><ul class="news-section__list"><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">24 декабря, Турбо-страницы</div><a class="link link_theme_black news-item__title i-bem" title="Комментарии пользователей Яндекса теперь на Турбо-страницах" tabindex="0" href="https://yandex.ru/blog/yatechnologies/kommentarii-polzovateley-yandeksa-teper-na-turbo-stranitsakh" data-bem='{"link":{}}'>Комментарии пользователей Яндекса теперь на Турбо-страницах</a><div class="news-item__content"><div class="news-item__content-wrapper">Новый инструмент для Турбо-страниц, созданных в&nbsp;Вебмастере, позволяет пользователям оставлять свои комментарии на&nbsp;контентной&nbsp;площадке без дополнительной авторизации. Посетителю вашей Турбо-страницы проще оставлять комментарии, а&nbsp;издателям&nbsp;&mdash; растить вовлеченность и&nbsp;лояльность аудитории.</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/kommentarii-polzovateley-yandeksa-teper-na-turbo-stranitsakh" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">19 декабря, Яндекс.Игры</div><a class="link link_theme_black news-item__title i-bem" title="В Яндекс.Играх появились игры со встроенными покупками" tabindex="0" href="https://yandex.ru/blog/yatechnologies/v-yandeks-igrakh-poyavilis-igry-so-vstroennymi-pokupkami" data-bem='{"link":{}}'>В Яндекс.Играх появились игры со встроенными покупками</a><div class="news-item__content"><div class="news-item__content-wrapper">Теперь разработчики могут добавлять в&nbsp;каталог Яндекс.Игр браузерные игры со&nbsp;встроенными покупками. Предложите пользователям приобрести, к&nbsp;примеру, дополнительное время на&nbsp;прохождение уровня или аксессуары для персонажа.</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/v-yandeks-igrakh-poyavilis-igry-so-vstroennymi-pokupkami" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">10 декабря, Новость</div><a class="link link_theme_black news-item__title i-bem" title="Мониторинг — новый раздел консоли разработчика для эффективной поддержки навыков умного дома" tabindex="0" href="https://yandex.ru/blog/yatechnologies/monitoring-novyy-razdel-konsoli-razrabotchika-dlya-effektivnoy-podderzhki-navykov-umnogo-doma" data-bem='{"link":{}}'>Мониторинг — новый раздел консоли разработчика для эффективной поддержки навыков умного дома</a><div class="news-item__content"><div class="news-item__content-wrapper">Эти вопросы возникают, пожалуй, у&nbsp;каждого разработчика навыков Алисы. Как отслеживать работу своего продукта после успешного тестирования и&nbsp;публикации? Как оценить качество его работы, чтобы избежать&nbsp;блокировки?</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/monitoring-novyy-razdel-konsoli-razrabotchika-dlya-effektivnoy-podderzhki-navykov-umnogo-doma" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">3 декабря, Вебмастер</div><a class="link link_theme_black news-item__title i-bem" title="Теперь архив внутренних ссылок можно скачать" tabindex="0" href="https://yandex.ru/blog/yatechnologies/teper-arkhiv-vnutrennikh-ssylok-mozhno-skachat" data-bem='{"link":{}}'>Теперь архив внутренних ссылок можно скачать</a><div class="news-item__content"><div class="news-item__content-wrapper">Для эффективной работы с&nbsp;оптимизацией вашего сайта необходимо постоянно отслеживать неработающие внутренние ссылки. Оперативно отслеживать появление таких ссылок можно в&nbsp;Вебмастере&nbsp;(Ссылки&nbsp;&mdash; внутренние ссылки). Для вашего удобства неработающие внутренние ссылки можно не&nbsp;только просматривать, но&nbsp;и&nbsp;скачивать в&nbsp;виде архива.</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/teper-arkhiv-vnutrennikh-ssylok-mozhno-skachat" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">29 ноября, Новость</div><a class="link link_theme_black news-item__title i-bem" title="Премия Алисы: лучшие навыки за ноябрь" tabindex="0" href="https://yandex.ru/blog/yatechnologies/premiya-alisy-luchshie-navyki-za-noyabr" data-bem='{"link":{}}'>Премия Алисы: лучшие навыки за ноябрь</a><div class="news-item__content"><div class="news-item__content-wrapper">30&nbsp;ноября&nbsp;&mdash; это суббота, выходной. А&nbsp;значит сегодня мы&nbsp;подведем итоги ежемесячной премии Алисы. Каждый раз, когда мы&nbsp;командой разбираем ваши заявки и&nbsp;спорим, почему тот или иной навык крутой, мы&nbsp;счастливы.Мы&nbsp;видим, как растет качество навыков и&nbsp;их&nbsp;количество в&nbsp;заявках на&nbsp;премию. Это нас мотивирует работать усерднее, чтобы реализовать все желания разработчиков и&nbsp;развивать самого умного голосового помощника&nbsp;&mdash; Алису!А&nbsp;вот и&nbsp;наши победители:&nbsp;</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/premiya-alisy-luchshie-navyki-za-noyabr" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li><li class="news-section__item"><div class="news-item"><div class="news-item__wrapper"><div class="news-item__date">29 ноября, Вебмастерская</div><a class="link link_theme_black news-item__title i-bem" title="Девятая Вебмастерская: презентации докладчиков и запись трансляции" tabindex="0" href="https://yandex.ru/blog/yatechnologies/devyataya-vebmasterskaya-prezentatsii-dokladchikov-i-zapis-translyatsii" data-bem='{"link":{}}'>Девятая Вебмастерская: презентации докладчиков и запись трансляции</a><div class="news-item__content"><div class="news-item__content-wrapper">22&nbsp;ноября в&nbsp;офисе Яндекса прошла&nbsp;Девятая Вебмастерская&nbsp;&mdash; конференция для маркетологов, аналитиков и&nbsp;владельцев сайтов.</div></div><div class="news-item__button"><a class="button2 button2_size_s button2_theme_action button2_type_link button2_view_classic i-bem" tabindex="0" href="https://yandex.ru/blog/yatechnologies/devyataya-vebmasterskaya-prezentatsii-dokladchikov-i-zapis-translyatsii" data-bem='{"button2":{}}'><span class="button2__text">Подробнее</span></a></div></div></div></li></ul></div></div></section></main><div class="b-page__footer"><div class="footer clearfix" role="contentinfo"><div class="footer__cols"><div class="footer__left footer__column"><span class="footer__copyright">© 2014&ndash;2020&nbsp;<a class="link footer__link i-bem" tabindex="0" href="https://yandex.ru" data-bem='{"link":{}}'>Яндекс</a></span><div class="footer__useful-links"><span class="feedback-modal i-bem" data-bem='{"feedback-modal":{}}'><span class="link feedback-modal__link i-bem" tabindex="0" role="button" data-bem='{"link":{}}'>Обратная связь</span><div class="modal modal_theme_normal modal_type_feedback modal_autoclosable_yes popup2 popup2_autoclosable_yes i-bem" data-bem='{"modal":{},"popup2":{"zIndexGroupLevel":20}}'><div class="modal__table"><div class="modal__cell"><div class="modal__content"><header class="feedback-modal__header"><button class="button button_theme_normal button_size_xs feedback-modal__close i-bem" type="button" autocomplete="off" data-bem='{"button":{}}'><span class="button__text"><span class="icon icon_type_cross button__icon"></span></span></button><h2 class="feedback-modal__title">Обратная связь</h2></header><iframe class="forms-iframe" frameborder="0" src="https://forms.yandex.ru/surveys/5569?iframe=1&amp;theme=developers&amp;lang=ru"></iframe><div class="feedback-modal__loading"><div class="spin2 spin2_size_m spin2_progress_yes"></div></div></div></div></div></div></span><a class="link footer__link i-bem" tabindex="0" href="//events.yandex.ru" data-bem='{"link":{}}'>События</a></div></div><div class="footer__socials footer__column"><div class="social-networks"><a class="link link_theme_normal social-networks__link i-bem" title="facebook" target="blank" tabindex="0" href="https://www.facebook.com/profile.php?id=122612334425563&amp;ref=br_rs" rel="noopener noreferrer" data-bem='{"link":{}}'><span class="icon icon_type_fb link__icon social-networks__icon"></span></a><a class="link link_theme_normal social-networks__link i-bem" title="vkontakte" target="blank" tabindex="0" href="https://vk.com/yandex4developers" rel="noopener noreferrer" data-bem='{"link":{}}'><span class="icon icon_type_vk link__icon social-networks__icon"></span></a><a class="link link_theme_normal social-networks__link i-bem" title="twitter" target="blank" tabindex="0" href="https://twitter.com/yandex" rel="noopener noreferrer" data-bem='{"link":{}}'><span class="icon icon_type_twitter link__icon social-networks__icon"></span></a><a class="link link_theme_normal social-networks__link i-bem" title="youtube" target="blank" tabindex="0" href="https://www.youtube.com/channel/UCTUyoZMfksbNIHfWJjwr5aQ" rel="noopener noreferrer" data-bem='{"link":{}}'><span class="icon icon_type_youtube link__icon social-networks__icon"></span></a><a class="link link_theme_normal social-networks__link i-bem" title="habr" target="blank" tabindex="0" href="https://habrahabr.ru/company/yandex/" rel="noopener noreferrer" data-bem='{"link":{}}'><span class="icon icon_type_habr link__icon social-networks__icon"></span></a></div></div><div class="footer__right footer__column"></div></div></div></div><!--[if IE 8]><script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js" nonce="258ZnN1rNBZBAa7m2BkNRA=="></script><script src="https://yastatic.net/jquery/1.12.3/jquery.min.js" nonce="258ZnN1rNBZBAa7m2BkNRA=="></script><![endif]--><!--[if gt IE 8]><!--><script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" nonce="258ZnN1rNBZBAa7m2BkNRA=="></script><!--<![endif]--><script src="//yastatic.net/q/tech-front/vv2.22.5/static/desktop.bundles/index/_index.ru.js" nonce="258ZnN1rNBZBAa7m2BkNRA=="></script><script src="https://yastatic.net/yandex-forms-frontend/_/forms-common.js" nonce="258ZnN1rNBZBAa7m2BkNRA=="></script><div class="analytics"><iframe src="https://tech-source.yandex.net/googleAnalytics/UA-97476851-1" frameborder="0" width="0" height="0"></iframe><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem" data-bem='{"b-statcounter__metrika":{"webvisor":true,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true,"id":21930706}}'><noscript><img alt="" src="//mc.yandex.ru/watch/21930706"/></noscript></i></i><i class="b-statcounter"><i class="b-statcounter__metrika b-statcounter__metrika_type_js i-bem" data-bem='{"b-statcounter__metrika":{"webvisor":false,"clickmap":true,"trackLinks":true,"accurateTrackBounce":true,"id":21930706}}'><noscript><img alt="" src="//mc.yandex.ru/watch/21930706"/></noscript></i></i></div></body></html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU">
+<head>
+	
+	<title>Компьютерный блог | Настройка,оптимизация,защита компьютера</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<link rel="stylesheet" href="http://yroki-kompa.ru/wp-content/themes/rundown/style.css" type="text/css" media="screen" />
+	
+<!-- All in One SEO Pack 2.5 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="description"  content="На сайте содержатся практические уроки и обучающие статьи, где подробно по шагам простым и понятным языком описываются действия, которые помогут вам - начинающему пользователю установить и настроить различные программы, научиться правильно работать на компьютере" />
+
+<meta name="keywords"  content="Компьютерные уроки, советы, секреты, фишки" />
+<link rel='next' href='http://yroki-kompa.ru/page/2' />
+
+<link rel="canonical" href="http://yroki-kompa.ru/" />
+<!-- /all in one seo pack -->
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/yroki-kompa.ru\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='w_small_vote_style-css'  href='http://yroki-kompa.ru/wp-content/plugins/widget-small-vote/w_small_vote.css' type='text/css' media='all' />
+<link rel='stylesheet' id='w_small_vote_style2-css'  href='http://yroki-kompa.ru/wp-content/plugins/widget-small-vote2/w_small_vote.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://yroki-kompa.ru/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='http://yroki-kompa.ru/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='http://yroki-kompa.ru/wp-content/themes/rundown/script/rundown-script.js'></script>
+<!--[if IE]>
+	<link href="http://yroki-kompa.ru/wp-content/themes/rundown/styles/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->	
+	
+
+<link rel="icon" href="http://yroki-kompa.ru/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://yroki-kompa.ru/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="home blog custom-background">
+
+<!-- -->
+
+	<div id="wrapper">
+	
+	<div id="header">
+		
+
+		<div id="header-inner">
+			<a href="http://yroki-kompa.ru" title="Компьютерный блог"><img class="logo" src="http://yroki-kompa.ru/wp-content/themes/rundown/images/logo.png" alt="Компьютерный блог" width="230"/></a>
+			 
+			<h1>Компьютерный блог</h1>          						Настройка,оптимизация,защита компьютера		
+</div>
+		
+				
+		<div id="primarynav" class="menu-gorizontalnoe-menyu-container"><ul id="menu-gorizontalnoe-menyu" class="menu"><li id="menu-item-47" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-47"><a title="Главная" href="http://yroki-kompa.ru/">Главная</a></li>
+<li id="menu-item-48" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://yroki-kompa.ru/karta_saita">Все статьи</a></li>
+<li id="menu-item-49" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://yroki-kompa.ru/kontakty">Контакты</a></li>
+<li id="menu-item-50" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://yroki-kompa.ru/o_bloge">О блоге</a></li>
+</ul></div>		
+		<div class="clear"></div>	
+				
+	</div><!--/#header-->		
+		<div id="main">
+			
+			<div id="content">
+			
+				
+						
+<div id="post-771" class="post-771 post type-post status-publish format-standard has-post-thumbnail hentry category-internet">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/kak-zapisat-razgovor-v-formate-video-ili-audio-v-skajpe.html" title="Как записать разговор в формате видео или аудио в скайпе?" rel="bookmark">Как записать разговор в формате видео или аудио в скайпе?</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2016-03-18T16:16:49+00:00" pubdate>18.03.2016</time>		&bull; <a href="http://yroki-kompa.ru/kak-zapisat-razgovor-v-formate-video-ili-audio-v-skajpe.html#respond"><span class="leave-reply"> Нет комментариев</span></a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="170" height="150" src="http://yroki-kompa.ru/wp-content/uploads/2016/03/drex_capturing_skype_calls_custom_5-170x150.png" class="alignleft wp-post-image" alt="" />				
+		<p>Все мы используем скайп для бесплатного общения с друзьями, родителями, знакомыми, коллегами в какой точке мира они бы не находились, мне особенно нравится опция демонстрации экрана, так как часто приходится пользоваться этой замечательной функцией по работе. Иногда может возникнуть необходимость записать какой-то важный звонок, происходящий через<a href="http://yroki-kompa.ru/kak-zapisat-razgovor-v-formate-video-ili-audio-v-skajpe.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/internet" rel="category tag">Интернет</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-771-->					
+					
+						
+<div id="post-747" class="post-747 post type-post status-publish format-standard has-post-thumbnail hentry category-raznoe">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/hetman-photo-recovery-programma-dlya-vosstanovleniya-udalennyx-fotografij.html" title="Hetman Photo Recovery &#8212; программа для восстановления удаленных фотографий" rel="bookmark">Hetman Photo Recovery &#8212; программа для восстановления удаленных фотографий</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2015-12-12T07:30:12+00:00" pubdate>12.12.2015</time>		&bull; <a href="http://yroki-kompa.ru/hetman-photo-recovery-programma-dlya-vosstanovleniya-udalennyx-fotografij.html#comments"> Один комментарий</a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="106" height="149" src="http://yroki-kompa.ru/wp-content/uploads/2015/12/box-5.jpg" class="alignleft wp-post-image" alt="Hetman Photo Recovery — программа для восстановления удаленных фотографий" />				
+		<p>Новая полезная программа Hetman Photo Recovery, которая предназначена для восстановления утраченных изображений. При работе с ней можно восстановить удаленные изображения с флеш-карты, жесткого диска, мобильного телефона. Изображения могут быть восстановлены даже после переустановки MS Windows или полного форматирования жесткого диска. Преимущество программы Hetman Photo Recovery, в<a href="http://yroki-kompa.ru/hetman-photo-recovery-programma-dlya-vosstanovleniya-udalennyx-fotografij.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/raznoe" rel="category tag">Разное</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-747-->					
+					
+						
+<div id="post-737" class="post-737 post type-post status-publish format-standard has-post-thumbnail hentry category-sovety">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/proizvoditelnost-interfejsa-udalyaem-lishnie-vizualnye-effekty.html" title="Производительность интерфейса: удаляем лишние визуальные эффекты" rel="bookmark">Производительность интерфейса: удаляем лишние визуальные эффекты</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2015-09-24T12:49:41+00:00" pubdate>24.09.2015</time>		&bull; <a href="http://yroki-kompa.ru/proizvoditelnost-interfejsa-udalyaem-lishnie-vizualnye-effekty.html#comments">комментария 2</a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="170" height="150" src="http://yroki-kompa.ru/wp-content/uploads/2015/09/1389687081.57-170x150.jpg" class="alignleft wp-post-image" alt="" />				
+		<p>Когда постоянно пользуешься компьютером или ноутбуком, невольно замечаешь, как устройство начинает работать слабее &#8212; где-то приходится ждать секунды, пока система среагирует на команду, а где-то приходится даже делать перезагрузку, обновление и прочие манипуляции, поскольку система не реагирует на заданные рабочие процессы. Чтобы быстро решить вопрос с<a href="http://yroki-kompa.ru/proizvoditelnost-interfejsa-udalyaem-lishnie-vizualnye-effekty.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/sovety" rel="category tag">Полезные советы</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-737-->					
+					
+						
+<div id="post-730" class="post-730 post type-post status-publish format-standard has-post-thumbnail hentry category-novosti">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/acronis-predstavila-true-image-2016-dlya-rezervnogo-kopirovaniya-dannyx.html" title="Acronis представила True Image 2016 для резервного копирования данных" rel="bookmark">Acronis представила True Image 2016 для резервного копирования данных</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2015-08-17T22:20:16+00:00" pubdate>17.08.2015</time>		&bull; <a href="http://yroki-kompa.ru/acronis-predstavila-true-image-2016-dlya-rezervnogo-kopirovaniya-dannyx.html#comments">комментария 2</a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="170" height="111" src="http://yroki-kompa.ru/wp-content/uploads/2015/08/acronis-mini-170x111.png" class="alignleft wp-post-image" alt="acronis" />				
+		<p>Американская компания Acronis сделала очередное важное обновление пакета для резервного копирования данных &#8212; True Image 2016.Теперь пользователям стала еще доступна облачная версия программы &#8212; True Image Cloud. Сейчас также программа может работать как на персональных компьютерах и ноутбуках, так и на мобильных операционных системах Android и<a href="http://yroki-kompa.ru/acronis-predstavila-true-image-2016-dlya-rezervnogo-kopirovaniya-dannyx.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/novosti" rel="category tag">Новости</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-730-->					
+					
+						
+<div id="post-718" class="post-718 post type-post status-publish format-standard has-post-thumbnail hentry category-novosti">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/yota-zadumala-vypustit-yotaphone-3.html" title="Yota задумала выпустить YotaPhone 3" rel="bookmark">Yota задумала выпустить YotaPhone 3</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2015-05-30T16:12:09+00:00" pubdate>30.05.2015</time>		&bull; <a href="http://yroki-kompa.ru/yota-zadumala-vypustit-yotaphone-3.html#comments"> Один комментарий</a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="119" height="150" src="http://yroki-kompa.ru/wp-content/uploads/2015/05/yota1-119x150.jpg" class="alignleft wp-post-image" alt="" />				
+		<p>Мартынов &#8212; генеральный директор российской компании Yota сообщил что в очень скором будущем свет увидит Yotaphone 3,предыдущий отечественный смартфон YotaPhone 2 заметили во всем мире,и даже журнал Forbes назвал его самым революционным смартфоном 2014 года,несмотря на такие минусы как высокая цена и слабое железо. Старая модель<a href="http://yroki-kompa.ru/yota-zadumala-vypustit-yotaphone-3.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/novosti" rel="category tag">Новости</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-718-->					
+					
+						
+<div id="post-706" class="post-706 post type-post status-publish format-standard has-post-thumbnail hentry category-novosti">
+
+	<div class="post-head">
+	
+		<h2 class="post-title">
+		<a href="http://yroki-kompa.ru/spartan-inovacionnyj-brauzer-ot-microsoft.html" title="Spartan &#8212; иновационный браузер от Microsoft" rel="bookmark">Spartan &#8212; иновационный браузер от Microsoft</a>
+		</h2>		
+		
+		<div class="meta"> 
+		
+		<span class="sep">Опубликовано: </span><time class="entry-date" datetime="2015-04-02T17:41:14+00:00" pubdate>02.04.2015</time>		&bull; <a href="http://yroki-kompa.ru/spartan-inovacionnyj-brauzer-ot-microsoft.html#comments">комментария 4</a>			
+		</div>
+		
+	</div>
+	
+	<div class="entry">
+
+		<img width="170" height="150" src="http://yroki-kompa.ru/wp-content/uploads/2015/04/37-170x150.jpg" class="alignleft wp-post-image" alt="браузер от Microsoft" />				
+		<p>Microsoft сообщил о возможности протестировать свой иновационный браузер Spartan. Вполне вероятно, что название было выбрано в дань уважения бесстрашным спартанским воинам и звучит очень даже неплохо. Этот браузер заменит Internet Explorer и будет поставляться с новой операционной системой Windows 10. Сейчас Spartan включен в тестовую сборку<a href="http://yroki-kompa.ru/spartan-inovacionnyj-brauzer-ot-microsoft.html"></p>
+<p class="my_more">Читать далее&#8230;</p>
+<p></a></p>
+	
+		
+		<div class="clear"></div>
+				
+		<div class="meta2">
+			Рубрика: <a href="http://yroki-kompa.ru/category/novosti" rel="category tag">Новости</a> 					</div>			
+		
+	</div><!--/.entry-->
+	
+</div><!--/#post-706-->					
+											
+						<!-- ��������� ������������ ��������� -->
+					<div class="navigation"><span aria-current='page' class='page-numbers current'>1</span>
+<a class='page-numbers' href='http://yroki-kompa.ru/page/2'>2</a>
+<a class='page-numbers' href='http://yroki-kompa.ru/page/3'>3</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='http://yroki-kompa.ru/page/6'>6</a>
+<a class="next page-numbers" href="http://yroki-kompa.ru/page/2">&raquo;</a></div>	
+						<!-- ��������� ������������ ��������� -->
+						
+									
+			</div><!--/#content-->
+			
+<div id="sidebar">
+
+<!--------------------my html------------------------------------------------>
+<div id="podpis">
+	<p class="podpis-head">Новые статьи!</p>
+	<form action="wp-content/themes/rundown/podpiska.php" method="post">
+	<input type="text" name="name" onfocus="if (this.value=='Имя:') this.value='';"
+	onblur="if (this.value==''){this.value='Имя:'}" value="Имя:"/><br>
+	<input type="text" name="email" onfocus="if (this.value=='E-mail:') this.value='';"
+	onblur="if (this.value==''){this.value='E-mail:'}" value="E-mail:"/><br>
+	<input type="submit" value="Подписаться" />
+	<p class="readers">Подписчиков: 1827</p>
+	
+	</form>
+</div>
+<!--------------------my html------------------------------------------------>
+
+			<div id="recent-posts-2" class="widget">		<h2>Последние статьи:</h2>		<ul>
+											<li>
+					<a href="http://yroki-kompa.ru/kak-zapisat-razgovor-v-formate-video-ili-audio-v-skajpe.html">Как записать разговор в формате видео или аудио в скайпе?</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/hetman-photo-recovery-programma-dlya-vosstanovleniya-udalennyx-fotografij.html">Hetman Photo Recovery &#8212; программа для восстановления удаленных фотографий</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/proizvoditelnost-interfejsa-udalyaem-lishnie-vizualnye-effekty.html">Производительность интерфейса: удаляем лишние визуальные эффекты</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/acronis-predstavila-true-image-2016-dlya-rezervnogo-kopirovaniya-dannyx.html">Acronis представила True Image 2016 для резервного копирования данных</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/yota-zadumala-vypustit-yotaphone-3.html">Yota задумала выпустить YotaPhone 3</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/spartan-inovacionnyj-brauzer-ot-microsoft.html">Spartan &#8212; иновационный браузер от Microsoft</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/asus-gotovitsya-vypustit-samyj-byudzhetnyj-xromobuk.html">Asus готовится выпустить самый бюджетный хромобук</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/kakoj-planshet-luchshe-vybrat.html">Какой планшет лучше выбрать?</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/xromobuki-i-ultrabuki-chto-mozhet-pomoch-rynku-noutbukov-v-rossii.html">Хромобуки и ультрабуки – что может помочь рынку ноутбуков в России?</a>
+									</li>
+											<li>
+					<a href="http://yroki-kompa.ru/tor-brauzer.html">TOR браузер – лучшая программа для скрытия своей личности в сети</a>
+									</li>
+					</ul>
+		</div><div id="categories-4" class="widget"><h2>Категории</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://yroki-kompa.ru/category/windows" >Windows</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://yroki-kompa.ru/category/zhelezo-2" >Железо</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://yroki-kompa.ru/category/internet" >Интернет</a>
+<ul class='children'>
+	<li class="cat-item cat-item-8"><a href="http://yroki-kompa.ru/category/internet/brauzery" >Браузеры</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://yroki-kompa.ru/category/novosti" >Новости</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://yroki-kompa.ru/category/sovety" >Полезные советы</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://yroki-kompa.ru/category/raznoe" >Разное</a>
+</li>
+		</ul>
+</div><div id="text-4" class="widget">			<div class="textwidget"><noindex>
+<a href="http://download.adguard.com/d/17034/adguardInstaller.exe" rel="nofollow" target="_blank">
+<img src="http://static.adtidy.net/banners3/300x250.png" alt="Adguard" width="270px" height="220px">
+</a>
+</noindex></div>
+		</div><div id="text-5" class="widget">			<div class="textwidget"><!--
+<a href="http://hideme.ru/vpn/#tag=5648a3696381e&amp;bid=0618a961" target="_blank" rel="nofollow"><img src="http://partner.incloak.com/accounts/default1/banners/static-300-250-1.png" alt="" title="" width="270" height="220" /></a><img style="border:0" src="http://partner.incloak.com/scripts/imp.php?tag=5648a3696381e&amp;bid=0618a961" width="1" height="1" alt="" />
+-->
+<!--
+<a rel="nofollow" href="http://useroff.com/op/go/1991/p/sskmel" target="_blank"><img 
+
+src="http://useroff.com/all/bannery/Sam_sebe_komp_master_240х400_.gif"></a>
+-->
+<a rel="nofollow" href="http://clubprofi.com/shop/2016/turbo24" target="_blank"><img 
+
+src="/part_pc.gif"></a>
+</div>
+		</div><div id="widget_small_vote-2" class="widget"><div class='smal_vote_style'><h2>Опрос</h2><p>Нашли ли вы на сайте ответ на свой вопрос?</p><form action="" method="post"><input type='radio' name='option_answer' value='opt1' checked />
+                                    <label>Да</label><br><input type='radio' name='option_answer' value='opt2'  />
+                                    <label>Частично</label><br><input type='radio' name='option_answer' value='opt3'  />
+                                    <label>Нет</label><br><input name="ip" type="hidden" value="89.239.148.136" /><input name="vote_sub" type="submit" value="Голосовать" /></form></div></div><div id="widget_small_vote2-2" class="widget"><div class='smal_vote_style'><h2>Опрос 2</h2><p>Нужен ли вам подробный видеоурок по bat-файлам с интересными примерами?</p><form action="" method="post"><input type='radio' name='option_answer2' value='opt1' checked />
+                                    <label>Да</label><br><input type='radio' name='option_answer2' value='opt2'  />
+                                    <label>Нет</label><br><input type='radio' name='option_answer2' value='opt3'  />
+                                    <label>Мне всё равно</label><br><input name="ip" type="hidden" value="89.239.148.136" /><input name="vote_sub2" type="submit" value="Голосовать" /></form></div></div>			
+	
+</div><!--/#sidebar-->	
+
+<div class="clear"></div>			
+	
+
+		</div><!--/#main-->
+		
+		<div class="clear"></div>		
+		
+		<div id="footer">
+		
+			<div id="primarynav-footer" class="menu-gorizontalnoe-menyu-container"><ul id="menu-gorizontalnoe-menyu-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-47"><a title="Главная" href="http://yroki-kompa.ru/">Главная</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="http://yroki-kompa.ru/karta_saita">Все статьи</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a href="http://yroki-kompa.ru/kontakty">Контакты</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="http://yroki-kompa.ru/o_bloge">О блоге</a></li>
+</ul></div>		
+		
+			<div class="footer-inner">
+				<span class="footcreditleft">&copy; 2012 - Компьютерный блог<br>
+					При копировании материалов активная ссылка
+на сайт первоисточник обязательна!</span>
+				<div class="clear"></div>
+
+
+<noindex>
+				    <!--LiveInternet counter-->
+			<script type="text/javascript"><!--
+            document.write("<a href='http://www.liveinternet.ru/click' "+
+            "target=_blank + rel=nofollow><img src='//counter.yadro.ru/hit?t16.6;r"+
+            escape(document.referrer)+((typeof(screen)=="undefined")?"":
+            ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+            screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+            ";"+Math.random()+
+            "' alt='' title='LiveInternet: показано число просмотров за 24"+
+            " часа, посетителей за 24 часа и за сегодня' "+
+            "border='0' width='88' height='31'><\/a>")
+        //--></script><!--/LiveInternet--> 
+
+<!-- begin of Top100 code -->
+<script id="top100Counter" type="text/javascript" src="http://counter.rambler.ru/top100.jcn?2701026"></script>
+<noscript>
+<a href="http://top100.rambler.ru/navi/2701026/" rel="nofollow">
+<img src="http://counter.rambler.ru/top100.cnt?2701026" alt="Rambler's Top100" border="0"/>
+</a>
+</noscript>
+<!-- end of Top100 code -->
+<!-- Rating@Mail.ru counter -->
+<a target="_top" href="http://top.mail.ru/jump?from=2193947" rel="nofollow">
+<img src="http://da.c7.b1.a2.top.mail.ru/counter?id=2193947;t=51" 
+border="0" height="31" width="88" alt="Рейтинг@Mail.ru"></a>
+<!-- //Rating@Mail.ru counter -->
+<!-- Top YandeG for: `yroki-kompa.ru` id: `232253` -->
+<a href="http://yandeg.ru/" target="_blank" 
+title="Статистика сайта. Показано: просмотров страниц за неделю, просмотров страниц сегодня, посетителей сегодня."  
+style="text-decoration:none; font-size: 8px;" rel="nofollow">
+<script type="text/javascript">
+<!--
+document.write('<img '+
+'src="http://count.yandeg.ru/cnt.php?id=232253&img=15&h='+escape(document.URL)+
+'&ref='+escape(document.referrer)+((typeof(screen)=='undefined')?'':
+'&s='+screen.width+'*'+screen.height+
+'*'+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+
+'&rand='+Math.random()+
+'" width="88" height="31" border="0"'+
+' alt="Рейтинг Сайтов YandeG" />')
+//--></script></a><div 
+style="position:absolute;left:-2380px;"><a 
+href="http://world-viewer.com/" rel="nofollow">Cars</a></div>
+<!-- /Top YandeG -->
+<a href="http://top.novosel.ru/?id=35777" target=_blank rel="nofollow"><img src="http://top.novosel.ru/top.gif?id=35777" width=88 height=31 border=0 alt="Каталог популярных сайтов"></a>
+      <!-- www.popularsite.ru - Рейтинг популярных сайтов --> 
+      <script type='text/javascript' language='Javascript'src='http://www.popularsite.ru/0pixel.php?mode=microbutton&publisherid=10000&website=yroki-kompa.ru'>
+ </script> 
+ </noindex>
+			</div>	
+		</div><!--/#footer-->
+	
+	
+	</div><!-- /#wrapper -->
+	
+	<a href="#" class="scrollup">Scroll to top</a>			
+
+	
+
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+(function(){ var widget_id = 'WRZotndHm6';
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+
+	
+</body>
+</html>
