@@ -14,11 +14,8 @@ public class HtmlController { //controllers for downloading a web page, saving i
     private static final Logger log = Logger.getLogger(HtmlController.class);
 
     public void downloadHtml(URL url) throws IOException {
-
-        try {
             htmlDoc="";
-            BufferedReader reader = new BufferedReader(
-                    new InputStreamReader(url.openConnection().getInputStream(), "UTF-8"));
+            BufferedReader reader = new BufferedReader(new InputStreamReader(url.openConnection().getInputStream(), "UTF-8"));
             while (true) {
                 if(Runtime.getRuntime().maxMemory()>Runtime.getRuntime().totalMemory()+500000){ //memory overflow control
                     String line = reader.readLine();
@@ -28,9 +25,6 @@ public class HtmlController { //controllers for downloading a web page, saving i
                 }
             }
             log.info("Website" + url.toString() +" downloaded");
-        }catch (Exception e){
-            log.error(e);
-        }
 
     }
 
@@ -39,7 +33,7 @@ public class HtmlController { //controllers for downloading a web page, saving i
     }
 
     public void saveInFile(){
-        if (htmlDoc==null){
+        if (htmlDoc==null || htmlDoc.equals("")){
             System.out.println("Doc empty");
         }else {
             try(FileWriter writer = new FileWriter("index.html", false))
